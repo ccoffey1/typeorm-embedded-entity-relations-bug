@@ -1,7 +1,7 @@
-# Awesome Project Build with TypeORM
+# TypeORM Embedded Entities Bug
 
-Steps to run this project:
+Unable to save an update to a relation that exists on an embedded entity (creation via the relation, however, works as expected).
+The data to trigger this bug is already in a sqlite file.
+Run `yarn install` and `yarn start`. Error will occur.
 
-1. Run `npm i` command
-2. Setup database settings inside `data-source.ts` file
-3. Run `npm start` command
+https://github.com/typeorm/typeorm/issues/10578
